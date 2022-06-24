@@ -67,12 +67,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             TimePickerDialog.OnTimeSetListener { view, hour, minute ->
                 Log.d("UI_PARTS", "$hour:$minute")
                 var speak: String
-                speak = ""
+                speak = "おはよう"
                 if (hour < 2){
                     speak = "こんばんは"
-                }
-                if (hour > 1){
-                    speak ="おはよう"
                 }
                 if (hour > 9){
                     speak ="こんにちは"
